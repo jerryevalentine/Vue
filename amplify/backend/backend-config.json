@@ -1,0 +1,87 @@
+{
+  "auth": {
+    "amplifyvuetemplate9a5d9de4": {
+      "customAuth": false,
+      "dependsOn": [
+        {
+          "attributes": [
+            "Arn",
+            "Name"
+          ],
+          "category": "function",
+          "resourceName": "amplifyvuetemplate9a5d9de4CustomMessage",
+          "triggerProvider": "Cognito"
+        }
+      ],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "amplifyvuetemplate9a5d9de4CustomMessage": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_amplifyvuetemplate9a5d9de4CustomMessage_EMAILMESSAGE": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyvuetemplate9a5d9de4CustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_amplifyvuetemplate9a5d9de4CustomMessage_EMAILSUBJECT": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyvuetemplate9a5d9de4CustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_amplifyvuetemplate9a5d9de4CustomMessage_REDIRECTURL": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyvuetemplate9a5d9de4CustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_amplifyvuetemplate9a5d9de4CustomMessage_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyvuetemplate9a5d9de4CustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_amplifyvuetemplate9a5d9de4CustomMessage_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "amplifyvuetemplate9a5d9de4CustomMessage"
+        }
+      ]
+    }
+  }
+}
